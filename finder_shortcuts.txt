@@ -1,0 +1,39 @@
+Author: Bhishan Poudel, Physics PhD student Ohio University
+Date  :  Mar 1, 2018
+
+Topic: Mac Finder options
+====================================
+1. open the finder
+2. show > pathbar and status bar
+3. show > customize_toolbar > drag a) new folder b) get info c) Path d) delete
+   also click show icon and text.
+   
+   
+   
+To view the full path at the top of the finder:
+================================================
+go to terminal and paste this:
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
+
+Add right click Copy Path 
+==========================
+http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
+
+Open automator from right clicking /Applications/Automator.app
+Choose service
+
+Search: Copy to clipboard
+Service receivers selected *files and folders* in Finder.app
+
+
+File > Save
+
+Now, close automator, we can see right click options.
+
+
+Add keyboard shortcut
+======================
+http://www.macyourself.com/2011/12/31/copy-file-or-folder-path-to-the-clipboard-in-mac-os-x-lion/
+
+Go to system preferences > keyboard > shortcuts> App shortcuts > Click + > 
+                          choose finder and type Copy Path and press ctrl sht c
