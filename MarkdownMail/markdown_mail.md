@@ -2,7 +2,7 @@ Date: March 3, 2018 Sat
 Topic: Apple service to convert markdown to rtf and various markdown tools
 References: 
   - [Service Scripts](http://brettterpstra.com/projects/markdown-service-tools/)
-  - [Multimarkdown Instller](http://brettterpstra.com/2013/03/08/new-in-the-markdown-service-tools-in-place-markdown-to-rtf/)
+  - [Multimarkdown Installer](http://brettterpstra.com/2013/03/08/new-in-the-markdown-service-tools-in-place-markdown-to-rtf/)
 
 **Installation**:
   - Download service tools and copy them to `~/Library/Services` from [here](http://brettterpstra.com/projects/markdown-service-tools/).
