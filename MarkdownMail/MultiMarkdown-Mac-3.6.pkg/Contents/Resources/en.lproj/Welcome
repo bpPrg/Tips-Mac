@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Installer Welcome Message</title>
+</head>
+<body>
+
+<p>This custom installer will install <strong>MultiMarkdown</strong> and several convenience scripts to serve as shortcuts for using MultiMarkdown from the command line.</p>
+
+<p>For more information, please check out the MultiMarkdown <a href="http://fletcherpenney.net/multimarkdown/">web
+site</a>.</p>
+
+<p>You will be guided through the steps necessary to install this software.</p>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>peg-multimarkdown User's Guide</title>
+	<meta name="author" content="Fletcher T. Penney"/>
+</head>
+<body>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> is a simple markup language used to convert plain text into HTML. </p>
+
+<p><a href="http://fletcherpenney.net/multimarkdown/">MultiMarkdown</a> is a derivative of Markdown that adds new syntax features, such as footnotes, tables, and metadata. Additionally, it offers mechanisms to convert plain text into LaTeX in addition to HTML. </p>
+
+<p><a href="https://github.com/fletcher/peg-multimarkdown">peg-multimarkdown</a> is an implementation of MultiMarkdown derived from John MacFarlane&#8217;s <a href="https://github.com/jgm/peg-markdown">peg-markdown</a>. It makes use of a parsing expression grammar (PEG), and is written in C. It should compile for most any (major) operating system. </p>
+
+<p>Thanks to work by Daniel Jalkut, MMD no longer requires GLib2 as a dependency. This should make it easier to compile on various operating systems. </p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="macosx">Mac OS X</h3>
+
+<p>On the Mac, you can choose from using an installer to install the program for you, or you can compile it yourself from scratch. If you know what that means, follow the instructions below in the Linux section. Otherwise, definitely go for the installer! </p>
+
+<p>You can also install MultiMarkdown with the package manager <a href="http://www.macports.org/">MacPorts</a> with the following command: </p>
+
+<pre><code>sudo port install multimarkdown
+</code></pre>
+
+<p>Or using <a href="https://github.com/mxcl/homebrew">homebrew</a>: </p>
+
+<pre><code>brew install multimarkdown
+</code></pre>
+
+<p><strong>NOTE</strong>: I don&#8217;t maintain either of these ports/packages and can&#8217;t vouch that they are up to date or working properly. That said, I have started using <a href="https://github.com/mxcl/homebrew">homebrew</a> to install the latest development build on my machine, while using <code>make</code> in my working directory while editing:</p>
+
+<pre><code>brew install multimarkdown --HEAD
+</code></pre>
+
+<p>If you don&#8217;t know what any of that means, just <a href="http://github.com/fletcher/peg-multimarkdown/downloads">grab the installer</a>. </p>
+
+<p>If you want to compile for yourself, be sure you have the Developer Tools installed, and then follow the directions for <a href="#linux">Linux</a>. </p>
+
+<p>If you want to make your own installer, you can use the <code>make mac-installer</code> command after compiling the <code>multimarkdown</code> binary itself. </p>
+
+<h3 id="windows">Windows</h3>
+
+<p>The easiest way to get peg-multimarkdown running on Windows is to download the installer from the <a href="http://github.com/fletcher/peg-multimarkdown/downloads">downloads page</a>. It is created with the help of BitRock&#8217;s software. </p>
+
+<p>If you want to compile this yourself, you do it in the same way that you would install peg-markdown for Windows. The instructions are on the peg-multimarkdown <a href="https://github.com/fletcher/peg-multimarkdown/wiki/Building-for-Windows">wiki</a>. I was able to compile for Windows fairly easily using Ubuntu linux following those instructions. I have not tried to actually compile on a Windows machine. </p>
+
+<p>As a shortcut, if running on a linux machine you can use: </p>
+
+<pre><code>make windows
+</code></pre>
+
+<p>This creates the <code>multimarkdown.exe</code> binary. You can then install this manually. </p>
+
+<p>The <code>make win-installer</code> command is what I use to package up the BitRock installer into a zipfile. You probably won&#8217;t need it. </p>
+
+<h3 id="linux">Linux</h3>
+
+<p>You can either download the source from <a href="https://github.com/fletcher/peg-multimarkdown">peg-multimarkdown</a>, or (preferentially) you can use git: </p>
+
+<pre><code>git clone git://github.com/fletcher/peg-multimarkdown.git
+</code></pre>
+
+<p>You can run the <code>update_submodules.sh</code> script to update the submodules if you want to run the test commands, download the sample files and the Support directory, or compile the documentation. </p>
+
+<p>Then, simply run <code>make</code> to compile the source. </p>
+
+<p>You can also run some test commands to verify that everything is working properly. Of note, it is normal to fail one test in the Markdown tests, but the others should pass. You can then install the binary wherever you like. </p>
+
+<pre><code>make
+make test
+make mmd-test
+make latex-test
+make compat-test
+</code></pre>
+
+<p><strong>NOTE</strong> As of version 3.2, the tests including obfuscated email addresses will also fail due to a change in how random numbers are generated. </p>
+
+<h3 id="freebsd">FreeBSD</h3>
+
+<p>If you want to compile manually, you should be able to follow the directions for Linux above. However, apparently MultiMarkdown has been put in the ports tree, so you can also use: </p>
+
+<pre><code>cd /usr/ports/textproc/multimarkdown
+make install
+</code></pre>
+
+<p>(I have not tested this myself, and cannot guarantee that it works properly. Come to think of it, I don&#8217;t even know which version of MMD they use.) </p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Once installed, you simply do something like the following: </p>
+
+<ul>
+<li><p><code>multimarkdown file.txt</code> &#8212; process text into HTML. </p></li>
+<li><p><code>multimarkdown -c file.txt</code> &#8212; use a compatibility mode that emulates the original Markdown. </p></li>
+<li><p><code>multimarkdown -t latex file.txt</code> &#8212; output the results as LaTeX instead of HTML. This can then be processed into a PDF if you have LaTeX installed. You can further specify the <code>LaTeX Mode</code> metadata to customize output for compatibility with <code>memoir</code> or <code>beamer</code> classes. </p></li>
+<li><p><code>multimarkdown -t odf file.txt</code> &#8212; output the results as an OpenDocument Text Flat XML file. Does require the plugin be installed in your copy of OpenOffice, which is available at the <a href="http://github.com/fletcher/peg-multimarkdown/downloads">downloads</a> page. LibreOffice includes this plugin by default. </p></li>
+<li><p><code>multimarkdown -t opml file.txt</code> &#8212; convert the MMD text file to an MMD OPML file, compatible with OmniOutliner and certain other outlining and mind-mapping programs (including iThoughts and iThoughtsHD). </p></li>
+<li><p><code>multimarkdown -h</code> &#8212; display help and additional options. </p></li>
+<li><p><code>multimarkdown -b *.txt</code> &#8212; <code>-b</code> or <code>--batch</code> mode can process multiple files at once, converting <code>file.txt</code> to <code>file.html</code> or <code>file.tex</code> as directed. Using this feature, you can convert a directory of MultiMarkdown text files into HTML files, or LaTeX files with a single command without having to specify the output files manually. <strong>CAUTION</strong>: This will overwrite existing files with the <code>html</code> or <code>tex</code> extension, so use with caution. </p></li>
+</ul>
+
+<p><strong>Note</strong>: Several convenience scripts are available to simplify things: </p>
+
+<pre><code>mmd         =&gt; multimarkdown -b
+mmd2tex     =&gt; multimarkdown -b -t latex
+mmd2odf     =&gt; multimarkdown -b -t odf
+mmd2opml    =&gt; multimarkdown -b -t opml
+
+mmd2pdf     =&gt; Unsupported script to try and run latex/xelatex.
+               You can direct questions to the discussion list, but
+               I may or may not respond.  It works for me, so I share
+               it with those who are interested but make no
+               guarantees.
+</code></pre>
+
+<h2 id="whycreateanotherversionofmultimarkdown">Why create another version of MultiMarkdown?</h2>
+
+<ul>
+<li><p>Maintaining a growing collection of nested regular expressions was going to become increasingly difficult. I don&#8217;t plan on adding much (if any) in the way of new syntax features, but it was a mess. </p></li>
+<li><p>Performance on longer documents was poor. The nested perl regular expressions was slow, even on a relatively fast computer. Performance on something like an iPhone would probably have been miserable. </p></li>
+<li><p>The reliance on Perl made installation fairly complex on Windows. That didn&#8217;t bother me too much, but it is a factor. </p></li>
+<li><p>Perl can&#8217;t be run on an iPhone/iPad, and I would like to be able to have MultiMarkdown on an iOS device, and not just regular Markdown (which exists in C versions). </p></li>
+<li><p>I was interested in learning about PEG&#8217;s and revisiting C programming. </p></li>
+<li><p>The syntax has been fairly stable, and it would be nice to be able to formalize it a bit &#8212; which happens by definition when using a PEG. </p></li>
+<li><p>I wanted to revisit the syntax and features and clean things up a bit. </p></li>
+<li><p>Did I mention how much faster this is? And that it could (eventually) run on an iPhone? </p></li>
+</ul>
+
+<h2 id="whatsdifferent">What&#8217;s different?</h2>
+
+<h3 id="completedocumentsvs.snippets">&#8220;Complete&#8221; documents vs. &#8220;snippets&#8221;</h3>
+
+<p>A &#8220;snippet&#8221; is a section of HTML (or LaTeX) that is not a complete, fully-formed document. It doesn&#8217;t contain the header information to make it a valid XML document. It can&#8217;t be compiled with LaTeX into a PDF without further commands. </p>
+
+<p>For example: </p>
+
+<pre><code># This is a header #
+
+And a paragraph.
+</code></pre>
+
+<p>becomes the following HTML snippet: </p>
+
+<pre><code>&lt;h1 id=&quot;thisisaheader&quot;&gt;This is a header&lt;/h1&gt;
+
+&lt;p&gt;And a paragraph.&lt;/p&gt;
+</code></pre>
+
+<p>and the following LaTeX snippet: </p>
+
+<pre><code>\part{This is a header}
+\label{thisisaheader}
+
+
+And a paragraph.
+</code></pre>
+
+<p>It was not possible to create a LaTeX snippet with the original MultiMarkdown, because it relied on having a complete XHTML document that was then converted to LaTeX via an XSLT document (requiring a whole separate program). This was powerful, but complicated. </p>
+
+<p>Now, I have come full-circle. peg-multimarkdown will now output LaTeX directly, without requiring XSLT. This allows the creation of LaTeX snippets, or complete documents, as necessary. </p>
+
+<p>To create a complete document, simply include metadata. You can include a title, author, date, or whatever you like. If you don&#8217;t want to include any real metadata, including &#8220;format: complete&#8221; will still trigger a complete document, just like it used to. </p>
+
+<p><strong>NOTE</strong>: If the <em>only</em> metadata present is <code>Base Header Level</code> then a complete document will not be triggered. This can be useful when combining various documents together. </p>
+
+<p>The old approach (even though it was hidden from most users) was a bit of a kludge, and this should be more elegant, and more flexible. </p>
+
+<h3 id="creatinglatexdocuments">Creating LaTeX Documents</h3>
+
+<p>LaTeX documents are created a bit differently than under the old system. You no longer have to use an XSLT file to convert from XHTML to LaTeX. You can go straight from MultiMarkdown to LaTeX, which is faster and more flexible. </p>
+
+<p>To create a complete LaTeX document, you can process your file as a snippet, and then place it in a LaTeX template that you already have. Alternatively, you can use metadata to trigger the creation of a complete document. You can use the <code>LaTeX Input</code> metadata to insert a <code>\input{file}</code> command. You can then store various template files in your texmf directory and call them with metadata, or with embedded raw LaTeX commands in your document. For example: </p>
+
+<pre><code>LaTeX Input:        mmd-memoir-header  
+Title:              Sample MultiMarkdown Document  
+Author:             Fletcher T. Penney  
+LaTeX Mode:         memoir  
+LaTeX Input:        mmd-memoir-begin-doc  
+LaTeX Footer:       mmd-memoir-footer  
+</code></pre>
+
+<p>This would include several template files in the order that you see. The <code>LaTeX Footer</code> metadata inserts a template at the end of your document. Note that the order and placement of the <code>LaTeX Include</code> statements is important. </p>
+
+<p>The <code>LaTeX Mode</code> metadata allows you to specify that MultiMarkdown should use the <code>memoir</code> or <code>beamer</code> output format. This places subtle differences in the output document for compatibility with those respective classes. </p>
+
+<p>This system isn&#8217;t quite as powerful as the XSLT approach, since it doesn&#8217;t alter the actual MultiMarkdown to LaTeX conversion process. But it is probably much more familiar to LaTeX users who are accustomed to using <code>\input{}</code> commands and doesn&#8217;t require knowledge of XSLT programming. </p>
+
+<p>I recommend checking out the default <a href="https://github.com/fletcher/peg-multimarkdown-latex-support">LaTeX Support Files</a> that are available on github. They are designed to serve as a starting point for your own needs. </p>
+
+<p><strong>Note</strong>: You can still use this version of MultiMarkdown to convert text into XHTML, and then process the XHTML using XSLT to create a LaTeX document, just like you used to in MMD 2.0. </p>
+
+<h3 id="footnotes">Footnotes</h3>
+
+<p>Footnotes work slightly differently than before. This is partially on purpose, and partly out of necessity. Specifically: </p>
+
+<ul>
+<li><p>Footnotes are anchored based on number, rather than the label used in the MMD source. This won&#8217;t show a visible difference to the reader, but the XHTML source will be different. </p></li>
+<li><p>Footnotes can be used more than once. Each reference will link to the same numbered note, but the &#8220;return&#8221; link will only link to the first instance. </p></li>
+<li><p>Footnote &#8220;return&#8221; links are a separate paragraph after the footnote. This is due to the way peg-markdown works, and it&#8217;s not worth the effort to me to change it. You can always use CSS to change the appearance however you like. </p></li>
+<li><p>Footnote numbers are surrounded by &#8220;[]&#8221; in the text. </p></li>
+</ul>
+
+<h3 id="rawhtml">Raw HTML</h3>
+
+<p>Because the original MultiMarkdown processed the text document into XHTML first, and then processed the entire XHTML document into LaTeX, it couldn&#8217;t tell the difference between raw HTML and HTML that was created from plaintext. This version, however, uses the original plain text to create the LaTeX document. This means that any raw HTML inside your MultiMarkdown document is <strong>not</strong> converted into LaTeX. </p>
+
+<p>The benefit of this is that you can embed one piece of the document in two formats &#8212; one for XHTML, and one for LaTeX: </p>
+
+<pre><code>&lt;blockquote&gt;
+&lt;p&gt;Release early, release often!&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Linus Torvalds&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;!-- \epigraph{Release early, release often!}{Linus Torvalds} --&gt;
+</code></pre>
+
+<p>In this section, when the document is converted into XHTML, the <code>blockquote</code> sections will be used as expected, and the <code>epigraph</code> will be ignored since it is inside a comment. Conversely, when processed into LaTeX, the raw HTML will be ignored, and the comment will be processed as raw LaTeX. </p>
+
+<p>You shouldn&#8217;t need to use this feature, but if you want to specify exactly how a certain part of your document is processed into LaTeX, it&#8217;s a neat trick. </p>
+
+<h3 id="processingmultimarkdowninsidehtml">Processing MultiMarkdown inside HTML</h3>
+
+<p>In the original MultiMarkdown, you could use something like <code>&lt;div markdown=1&gt;</code> to tell MultiMarkdown to process the text inside the div. In peg-multimarkdown, you can do this, or you can use the command-line option <code>--process-html</code> to process the text inside all raw HTML. </p>
+
+<h3 id="mathsupport">Math Support</h3>
+
+<p>MultiMarkdown 2.0 supported <a href="http://www.chapman.edu/~jipsen/mathml/Asciimath.html">ASCIIMathML</a> embedded with MultiMarkdown documents. This syntax was then converted to MathML for XHTML output, and then further processed into LaTeX when creating LaTeX output. The benefit of this was that the ASCIIMathML syntax was pretty straightforward. The downside was that only a handful of browsers actually support MathML, so most of the time it was only useful for LaTeX. Many MMD users who are interested in LaTeX output already knew LaTeX, so they sometimes preferred native math syntax, which led to several hacks. </p>
+
+<p>MultiMarkdown 3.0 does not have built in support for ASCIIMathML. In fact, I would probably have to write a parser from scratch to do anything useful with it, which I have little desire to do. So I came up with a compromise. </p>
+
+<p>ASCIIMathML is no longer supported by MultiMarkdown. Instead, you <em>can</em> use LaTeX to code for math within your document. When creating a LaTeX document, the source is simply passed through, and LaTeX handles it as usual. <em>If</em> you desire, you can add a line to your header when creating XHTML documents that will allow <a href="http://www.mathjax.org/">MathJax</a> to appropriately display your math. </p>
+
+<p>Normally, MathJax <em>and</em> LaTeX supported using <code>\[ math \]</code> or <code>\( math \)</code> to indicate that math was included. MMD stumbled on this due to some issues with escaping, so instead we use <code>\\[ math \\]</code> and <code>\\( math \\)</code>. See an example: </p>
+
+<pre><code>latex input:    mmd-article-header  
+Title:          MultiMarkdown Math Example  
+latex input:    mmd-article-begin-doc  
+latex footer:   mmd-memoir-footer  
+xhtml header:   &lt;script type=&quot;text/javascript&quot;
+    src=&quot;http://localhost/~fletcher/math/mathjax/MathJax.js&quot;&gt;
+    &lt;/script&gt;
+
+
+An example of math within a paragraph --- \\({e}^{i\pi }+1=0\\)
+--- easy enough.
+
+And an equation on it's own:
+
+\\[ {x}_{1,2}=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\]
+
+That's it.
+</code></pre>
+
+<p>You would, of course, need to change the <code>xhtml header</code> metadata to point to your own installation of MathJax. </p>
+
+<p><strong>Note</strong>: MultiMarkdown doesn&#8217;t actually <em>do</em> anything with the code inside the brackets. It simply strips away the extra backslash and passes the LaTeX source unchanged, where it is handled by MathJax <em>if</em> it&#8217;s properly installed, or by LaTeX. If you&#8217;re having trouble, you can certainly email the <a href="http://groups.google.com/group/multimarkdown/">MultiMarkdown Discussion List</a>, but I do not provide support for LaTeX code. </p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<p>Thanks to John MacFarlane for <a href="https://github.com/jgm/peg-markdown">peg-markdown</a>. Obviously, this derivative work would not be possible without his work. Additionally, he was very gracious in giving me some pointers when I was getting started with trying to modify his software, and he continues to update peg-markdown with the various edge cases MultiMarkdown users have found. Hopefully both programs are better as a result.</p>
+
+<p>Thanks to Daniel Jalkut for his work on enabling MultiMarkdown to run without relying on GLib2. This makes it much more flexible! </p>
+
+<p>Thanks to John Gruber for the original <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. &#8217;Nuff said. </p>
+
+<p>And thanks to the many contributors and users of the original MultiMarkdown that helped me refine the syntax and search out bugs. </p>
+
+</body>
+</html>
