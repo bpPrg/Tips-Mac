@@ -5,8 +5,10 @@ References:
   - [Multimarkdown Installer](http://brettterpstra.com/2013/03/08/new-in-the-markdown-service-tools-in-place-markdown-to-rtf/)
 
 **Installation**:
-  - Download service tools and copy them to `~/Library/Services` from [here](http://brettterpstra.com/projects/markdown-service-tools/).
-  - Download MultiMarkdown-Mac-3.6 and install it from [this](http://brettterpstra.com/projects/markdown-service-tools/) website. Alternatively we can install it using brew: `brew install multimarkdown`.
+  - Download the service scripts and copy them to `~/Library/Services`.
+  - Download MultiMarkdown-Mac-3.6 and install it.
+    + Either download installer `.pkg` file and intall.
+    + Or, install it using brew: `brew install multimarkdown`.
   - The detail description of services is explained [here](http://brettterpstra.com/projects/markdown-service-tools/).
 
 
