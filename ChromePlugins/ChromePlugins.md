@@ -1,0 +1,16 @@
+# Google Chrome Plugins
+- Google Keep Chrome Extension
+- Grammarly for Chrome
+- Markdown Here # Can use at emails
+- Octotree # Shows dropdown menu for github repos
+- GitHub with MathJax # See math mode in markdown github e.g. $\alpha$ will be rendered as greek letter alpha.
+- Take a Break by Eye Care Plus
+- Tidy Bookmarks # shows drop down menu for all bookmarks
+- Website Blocker (Beta)
+- Zotero Connector
+- Simple Auto Scroll
+- PanicButton
+- Click&Clean
+- Chrome Remote Desktop # Control google chrome from any computers or mobile.
+- Adblock Plus
+- Adblock for Youtube™
