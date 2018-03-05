@@ -11,3 +11,7 @@ Applications for my mac computers and laptop
 - Detail list of quick look plugins are given [here](http://www.quicklookplugins.com/).
 - To look fitsfile we can use [QLfits](https://github.com/onekiloparsec/QLFits).
 - [Rest Plugin](https://github.com/cluther/qlrest) does not work in MacOS High Sierra. It does not do anything.
+
+# Format markdown in Mail etc
+- Install this [Multimarkdown Installer](http://brettterpstra.com/2013/03/08/new-in-the-markdown-service-tools-in-place-markdown-to-rtf/).
+- Copy these [Service Scripts](http://brettterpstra.com/projects/markdown-service-tools/) to `~/Library/Services`.
