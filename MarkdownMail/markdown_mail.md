@@ -8,7 +8,7 @@ References:
   - Download the service scripts and copy them to `~/Library/Services`.
   - Download MultiMarkdown-Mac-3.6 and install it.
     + Either download installer `.pkg` file and intall.
-    + Or, install it using brew: `brew install multimarkdown`.
+    + Or, install it using brew: `brew install multimarkdown`. NOTE: brew failed on mac computer, use installer.
   - The detail description of services is explained [here](http://brettterpstra.com/projects/markdown-service-tools/).
 
 
