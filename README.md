@@ -15,7 +15,7 @@ This repo contains settings and applications for my MacBook Pro and office iMacs
 ### Format markdown in Mail etc
 - Install this [Multimarkdown Installer](http://brettterpstra.com/2013/03/08/new-in-the-markdown-service-tools-in-place-markdown-to-rtf/).
 - Copy these [Service Scripts](http://brettterpstra.com/projects/markdown-service-tools/) to `~/Library/Services`.
-- Usage: Right click and select echo hello in new email. Right click, go to Services and convert markdown to rtf.(Syntax colors only in macpro).
+- Usage: Right click and select echo hello in new email. Right click, go to Services and convert markdown to rtf.
 
 
 ### Alfred
