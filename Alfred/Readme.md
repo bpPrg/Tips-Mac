@@ -1,6 +1,6 @@
 # Using Alfred in Mac
 - Alfred is a better alternative for Spotlight app. 
-- We can search any file and website easily using Alfred.
+- We can search any files and websites easily using Alfred.
 
 - Snippets, workflows, and syncing are not available in free version.
 
