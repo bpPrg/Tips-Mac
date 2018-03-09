@@ -6,7 +6,7 @@ This repo contains settings and applications for my MacBook Pro and office iMacs
 - Xcode, App Cleaner & Uninstaller
 - OneDrive, Google Drive, Dropbox
 
-### QuickLook Pluins
+### QuickLook Plugins
 - Collections of useful quick look plugins are given [here](https://github.com/sindresorhus/quick-look-plugins).
 - Detail list of quick look plugins are given [here](http://www.quicklookplugins.com/).
 - To look fitsfile we can use [QLfits](https://github.com/onekiloparsec/QLFits).
