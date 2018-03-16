@@ -10,3 +10,8 @@ Search for get finder, then drag Get Selected Finder Items from the left pane in
 Next, search for script, drag Run Shell Script over.  Using the pulldown menus, 
 choose /usr/bin/python for the Shell: and as arguments for Pass input:
 ```
+
+Some websites to combine pdf services.  
+All methods did not work in yosemite pisces.  
+
+- [example1](https://paulminors.com/merge-pdfs-mac-automator/)
