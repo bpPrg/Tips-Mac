@@ -20,3 +20,8 @@ This repo contains settings and applications for my MacBook Pro and office iMacs
 
 ### Alfred
 I have saved web search customization in a textfile.
+
+### System Prefences
+```
+System Preferences > Keyboard > Shortcuts > Services
+```
