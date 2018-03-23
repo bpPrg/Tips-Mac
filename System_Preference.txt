@@ -1,0 +1,3 @@
+Right click and open a directory in terminal
+
+System Preferences > Keyboard > Shortcuts > Services
