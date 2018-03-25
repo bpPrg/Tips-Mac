@@ -7,6 +7,7 @@ This repo contains settings and applications for my MacBook Pro and office iMacs
 - App Cleaner & Uninstaller
 - Slack, Zotero, DS9, fv-viewer (This gave problem with dmstack on pisces)
 - OneDrive, Google Drive, Dropbox
+- [pCloud](https://www.pcloud.com/how-to-install-pcloud-drive-mac-os.html?download=mac)
 
 ### QuickLook Plugins
 - Collections of useful quick look plugins are given [here](https://github.com/sindresorhus/quick-look-plugins).
