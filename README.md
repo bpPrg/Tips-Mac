@@ -2,8 +2,9 @@
 This repo contains settings and applications for my MacBook Pro and office iMacs.
 
 ### Apps for mac
+- NEVER download XQuartz (it harmed my dmstack), install xcode using atom, when installing atom, it installs xcode.
 -  Dr. Cleaner, Battery Monitor, CopyClip, Alfred, Slack, DjVu Reader
-- Xcode, App Cleaner & Uninstaller
+- App Cleaner & Uninstaller
 - OneDrive, Google Drive, Dropbox
 
 ### QuickLook Plugins
