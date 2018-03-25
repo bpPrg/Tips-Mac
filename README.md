@@ -5,6 +5,7 @@ This repo contains settings and applications for my MacBook Pro and office iMacs
 - NEVER download XQuartz (it harmed my dmstack), install xcode using atom, when installing atom, it installs xcode.
 -  Dr. Cleaner, Battery Monitor, CopyClip, Alfred, Slack, DjVu Reader
 - App Cleaner & Uninstaller
+- Slack, Zotero, DS9, fv-viewer (This gave problem with dmstack on pisces)
 - OneDrive, Google Drive, Dropbox
 
 ### QuickLook Plugins
