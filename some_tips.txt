@@ -1,0 +1,28 @@
+Mac tips
+=========
+1. to keep mac open without update or any thing change
+caffeinate  (to stop ctrl c)
+
+or, 
+caffeinate -u -t 3600 # for 1 hour
+
+
+2. screenshot as jpg (default png is large)
+defaults write com.apple.screencapture type jpg
+
+3. encrypt file or folder
+openssl enc -aes-256-cbc -e -in DRAG_FILE_HERE -out OUTPUT_NAME
+openssl enc -aes-256-cbc -d -in DRAG_FILE_HERE -out OUTPUT_NAME
+
+
+4. Use smart folder
+First rename labels
+cmd ,   (or finder preferenes)
+Finder > Preferences > Tags > Rename tags
+e.g. Rename red to Recent
+
+right click some files and folders from anywhere and tag them recent.
+
+then, finder > File > smart folder > search with Tag:recent   and save it.
+
+eg2:  search image 
