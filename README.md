@@ -3,11 +3,12 @@ This repo contains settings and applications for my MacBook Pro and office iMacs
 
 ### Apps for mac
 - NEVER download XQuartz (it harmed my dmstack), install xcode using atom, when installing atom, it installs xcode.
--  Dr. Cleaner, Battery Monitor, CopyClip, Alfred, Slack, DjVu Reader
+- CopyClip, Alfred, Slack
 - App Cleaner & Uninstaller
-- Slack, Zotero, DS9, fv-viewer (This gave problem with dmstack on pisces)
-- OneDrive, Google Drive, Dropbox
-- [pCloud](https://www.pcloud.com/how-to-install-pcloud-drive-mac-os.html?download=mac)
+- Slack, Zotero, DS9, 
+- hff5-view and fv-viewer (These gave problem with dmstack on pisces)
+- OneDrive, Google Drive, Dropbox, [pCloud][pcloud]
+-  Dr. Cleaner, Battery Monitor, DjVu Reader
 
 ### QuickLook Plugins
 - Collections of useful quick look plugins are given [here](https://github.com/sindresorhus/quick-look-plugins).
@@ -24,7 +25,16 @@ This repo contains settings and applications for my MacBook Pro and office iMacs
 ### Alfred
 I have saved web search customization in a textfile.
 
-### System Prefences
+### Settings
 ```
+Terminal > Preferences # Red sands, courier new 24, vertical bar, disable VT100 and disable bells, window check most
 System Preferences > Keyboard > Shortcuts > Services
+System Preferences > Users and Groups > Login Items
+Finder > Preferences 
+Finder > View > Customize Toolbar
+Dock settings
+Time (from toolbar) > Open Date time preferences
+
 ```
+
+[pcloud]: https://www.pcloud.com/how-to-install-pcloud-drive-mac-os.html?download=mac
