@@ -37,4 +37,9 @@ Time (from toolbar) > Open Date time preferences
 
 ```
 
+## Mac Malwares and Viruses
+1. Epolife
+2. Jimbre
+3. Friendlysocket
+
 [pcloud]: https://www.pcloud.com/how-to-install-pcloud-drive-mac-os.html?download=mac
