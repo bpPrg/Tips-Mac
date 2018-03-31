@@ -41,6 +41,15 @@ Time (from toolbar) > Open Date time preferences
 
 ```
 
+## Useful aliases and functions
+```bash
+# File: ~/.bash_profile
+alias sb='source ~/.bash_profile'
+export PS1='$(whoami)@${PWD/*\//}:' # change text color from terminal settings.
+alias rm="echo Use 'del', or the full path i.e. '/bin/rm'"
+function del () { mv  $1 ~/.Trash/; }
+```
+
 ## Mac Malwares and Viruses
 1. Epolife
 2. Jimbre
