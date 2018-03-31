@@ -25,9 +25,13 @@ This repo contains settings and applications for my MacBook Pro and office iMacs
 ### Alfred
 I have saved web search customization in a textfile.
 
-### Settings
+## Show full path in Finder
+- To see full path at bottom: `View > Show Path Bar`
+- To see full path name at top: `defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder`
+
+### Mac Settings
 ```
-Terminal > Preferences # Red sands, courier new 24, vertical bar, disable VT100 and disable bells, window check most
+Terminal > Preferences # Red sands, courier new 24, vertical bar, disable VT100 and disable bells, window check most, text
 System Preferences > Keyboard > Shortcuts > Services
 System Preferences > Users and Groups > Login Items
 Finder > Preferences 
