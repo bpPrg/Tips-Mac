@@ -47,7 +47,7 @@ Time (from toolbar) > Open Date time preferences
 alias sb='source ~/.bash_profile'
 export PS1='$(whoami)@${PWD/*\//}:' # change text color from terminal settings.
 alias rm="echo Use 'del', or the full path i.e. '/bin/rm'"
-function del () { mv  $1 ~/.Trash/; }
+function del () { mv  $@ ~/.Trash/; }
 ```
 
 ## Mac Malwares and Viruses
