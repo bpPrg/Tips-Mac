@@ -55,4 +55,7 @@ function del () { mv  $@ ~/.Trash/; }
 2. Jimbre
 3. Friendlysocket
 
+## My customized finder
+![Finder Customized Toolbar](images/Finder_toolbar.png)
+
 [pcloud]: https://www.pcloud.com/how-to-install-pcloud-drive-mac-os.html?download=mac
