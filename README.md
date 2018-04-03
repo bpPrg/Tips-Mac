@@ -55,6 +55,13 @@ function del () { mv  $@ ~/.Trash/; }
 2. Jimbre
 3. Friendlysocket
 
+## Add spaces to dock
+```
+# One execution of first line gives one space, we can move this space in the dock.
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+killall Dock
+```
+
 ## My customized finder
 ![Finder Customized Toolbar](images/Finder_toolbar.png)
 
