@@ -10,4 +10,4 @@ Use adobe reader and make the dark theme `Preferences > Accessibility > check on
 - Adobe supports only yellow color highlight, whereas Preview supports multiple colors.
 - Adobe supports dark background, Preview does not.
 
-![adobe](adobe_settings.png) 
+![adobe](adobe_text_color.png) 
