@@ -22,6 +22,9 @@ To convert a simple aText snippets in a csv format without special fields we can
 
 If we have multiple `.csv` files without `whitespace` in thier names we can run following command:
 ```bash
+# The python script: convert-aText-to-Alfred.py can be used to change aText csv snippet to alfredsnippets file.
+# Python dependencies:
+# pip install click json zipfile csv tempfile
 for f in *csv; do python convert-aText-to-Alfred.py $f; done;
 mkdir csvfiles; mv *.csv csvfiles
 mkdir alfredsnippets; mv *.alfredsnippets alfredsnippets
