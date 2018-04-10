@@ -6,7 +6,7 @@
 
 - We can install Alfred 3 from [official website](https://www.alfredapp.com/).
 
-- NOTE: Alfred costs $51 and is less powerful for snippets in comparison to aText (which is $5). 
+- NOTE: Alfred costs 51 Dollars and is less powerful for snippets in comparison to aText (which is 5 Dollars). 
   In aText we can define key-values, define cursor positions, insert date etc commands.
   However, in Alfred we can use fields only for clipboard copies.
   
