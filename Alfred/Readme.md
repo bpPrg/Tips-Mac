@@ -6,7 +6,14 @@
 
 - We can install Alfred 3 from [official website](https://www.alfredapp.com/).
 
-- For the usage we can take a look at [youtube video](https://www.youtube.com/watch?v=-UZ1mHknTiM).
+- NOTE: Alfred costs $51 and is less powerful for snippets in comparison to aText (which is $5). 
+  In aText we can define key-values, define cursor positions, insert date etc commands.
+  However, in Alfred we can use fields only for clipboard copies.
+  
+  To use clipboard copy we do not need to use Alfred, there is free mac app called `CopyClip`.
+  
+  Powerpack is not that useful unless we use workflows extensively.
+  In free version of Alfred we can use websearch and file search like as Spotlight.
 
 
 ## Convert aText snippets to alfredsnippets
