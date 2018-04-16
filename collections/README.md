@@ -566,6 +566,12 @@ defaults write com.apple.dock static-only -bool false && \
 killall Dock
 ```
 
+#### Reposition Dock
+```bash
+defaults write com.apple.Dock orientation -string right; killall Dock
+```
+
+
 ## Documents
 
 #### Convert File to HTML
