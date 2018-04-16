@@ -22,10 +22,10 @@ I also have alfred workflows for them with keybindings.
 Note: First we have to disable keys at `System Preferences > Keyboard > Shortcuts > Screenshots`.
 ```
 screencapture -h
-screencapture -i -x ${HOME}/Dropbox/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png
-screencapture -i -M -x ${HOME}/Dropbox/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png
+screencapture -i -x ${HOME}/Dropbox/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png # cmd shf 4
+screencapture -i -M -x ${HOME}/Dropbox/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png # cmd shf 6
 
-screencapture -w -x ${HOME}/Dropbox/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png
-screencapture -w -M -x ${HOME}/Dropbox/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png
+screencapture -w -x ${HOME}/Dropbox/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png # cmd shf 3
+screencapture -w -M -x ${HOME}/Dropbox/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png # cmd shf 5
 
 ```
