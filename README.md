@@ -62,6 +62,13 @@ defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-ty
 killall Dock
 ```
 
+## Nofitications
+```
+# To display notifications in external monitor, enable it from system preferences
+osascript -e 'display notification "Notification text" with title "Title"'
+```
+
+
 ## My customized finder
 ![Finder Customized Toolbar](images/Finder_toolbar.png)
 
