@@ -1,3 +1,5 @@
+Copied from [https://github.com/herrbischoff/awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line). 
+
 <h1><img src="https://cdn.rawgit.com/herrbischoff/awesome-macos-command-line/master/assets/logo.svg" alt="Awesome OS X Command Line" width="600"></h1>
 
 > A curated list of shell commands and tools specific to OS X.
