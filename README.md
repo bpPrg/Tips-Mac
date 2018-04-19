@@ -16,10 +16,10 @@
 - App Cleaner & Uninstaller
 - Slack, Zotero, DS9, 
 - OneDrive, Google Drive, Dropbox
-- # Careful: [pCloud][pcloud] # It did not work well in macpro, but is working in linux.
+-  _Careful:_ [pCloud][pcloud] # It did not work well in macpro, but is working in linux.
 - Dr. Cleaner, Battery Monitor, DjVu Reader
 - Cheatsheet # Go to any app, press and hold to see keyboard shortcuts
-- # Careful: hff5-view and fv-viewer (These gave problem with dmstack on pisces)
+- _Careful:_ hff5-view and fv-viewer (These gave problem with dmstack on pisces)
 
 ## QuickLook Plugins
 - Collections of useful quick look plugins are given [here](https://github.com/sindresorhus/quick-look-plugins).
