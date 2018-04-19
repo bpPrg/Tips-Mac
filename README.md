@@ -56,7 +56,7 @@ Time (from toolbar) > Open Date time preferences
 ```bash
 # File: ~/.bash_profile
 alias sb='source ~/.bash_profile'
-export PS1='$(whoami)@${PWD/*\//}:' # change text color from terminal settings.
+export PS1='\u@\[\e[0;34m\]\h:\[\e[0;31m\]\w\e[0m\n$ ' # Prompt Settings in terminal.
 alias rm="echo Use 'del', or the full path i.e. '/bin/rm'"
 function del () { mv  $@ ~/.Trash/; }
 ```
