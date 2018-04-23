@@ -14,7 +14,8 @@
 - NEVER download XQuartz (it harmed my dmstack), install xcode using atom, when installing atom, it installs xcode.
 - CopyClip, Alfred, aText
 - App Cleaner & Uninstaller
-- Slack, Zotero, DS9, 
+- Slack, Zotero, DS9
+- BitBar # Put timer, spotify items etc plugins in Mac menubar.
 - OneDrive, Google Drive, Dropbox
 -  _Careful:_ [pCloud][pcloud] # It did not work well in macpro, but is working in linux.
 - Dr. Cleaner, Battery Monitor, DjVu Reader
