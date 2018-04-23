@@ -12,15 +12,15 @@
 
 ## Apps for mac
 - NEVER download XQuartz (it harmed my dmstack), install xcode using atom, when installing atom, it installs xcode.
-- CopyClip, Alfred, aText
-- App Cleaner & Uninstaller
-- Slack, Zotero, DS9, Latexit, [Time Out][time-out]
-- BitBar # Put timer, spotify items etc plugins in Mac menubar.
-- OneDrive, Google Drive, Dropbox
+- [CopyClip][copyclip], [Alfred][alfred], [aText][atext]
+- [App Cleaner & Unistaller][app-cleaner-and-uninstaller]
+- [Slack][slack], [Zotero][zotero] [DS9][ds9], [Latexit][latexit], [Time Out][time-out]
+- [BitBar][bitbar] # Put timer, spotify items etc plugins in Mac menubar.
+- [OneDrive][onedrive], [Google Drive][google-drive], [Dropbox][dropbox]
 -  _Careful:_ [pCloud][pcloud] # It did not work well in macpro, but is working in linux.
-- Dr. Cleaner, Battery Monitor, DjVu Reader
-- Cheatsheet # Go to any app, press and hold to see keyboard shortcuts
-- _Careful:_ hff5-view and fv-viewer (These gave problem with dmstack on pisces)
+- [Dr. Cleaner][dr-cleaner], [Battery Monitor][battery-monitor], [DjVu Reader][djvu-reader]
+- [Cheatsheet][cheatsheet] # Go to any app, press and hold to see keyboard shortcuts
+- _Careful:_ [hdf5-view][hdf5-view] and [fv-viewer][fv-viewer] (These gave problem with dmstack on pisces)
 
 ## QuickLook Plugins
 - Collections of useful quick look plugins are given [here](https://github.com/sindresorhus/quick-look-plugins).
@@ -86,5 +86,28 @@ osascript -e 'display notification "Notification text" with title "Title"'
 ## My customized finder
 ![Finder Customized Toolbar](images/Finder_toolbar.png)
 
+[alfred]: https://www.alfredapp.com/
+[app-cleaner-and-uninstaller]: https://itunes.apple.com/us/app/app-cleaner-uninstaller/id1013897218?mt=12
+[atext]: http://www.trankynam.com/atext/
+[battery-monitor]: https://www.macupdate.com/app/mac/50775/battery-monitor
+[bitbar]: https://github.com/matryer/bitbar
+[cheatsheet]: https://www.mediaatelier.com/CheatSheet/
+[copyclip]: https://itunes.apple.com/us/app/copyclip-clipboard-history-manager/id595191960?mt=12
+[djvu-reader]: http://www.djvu.org/resources/
+[dr-cleaner]: https://www.drcleaner.com/dr-cleaner/
+[dropbox]: https://www.dropbox.com/install
+[ds9]: http://ds9.si.edu/site/Download.html
+[fv-view]: https://heasarc.gsfc.nasa.gov/ftools/fv/
+[google-drive]: https://www.google.com/drive/download/
+[hdf5-view]: https://www.hdfgroup.org/downloads/
+[latexit]: https://www.chachatelier.fr/latexit/latexit-downloads.php
+[onedrive]: https://onedrive.live.com/about/en-us/download/
 [pcloud]: https://www.pcloud.com/how-to-install-pcloud-drive-mac-os.html?download=mac
+[slack]: https://slack.com/downloads/osx
 [time-out]: http://www.dejal.com/download/?prod=timeout&vers=2.4&rel=gen&lang=en&op=show&ref=timeout
+[zotero]: https://www.zotero.org/download/
+
+
+
+
+
