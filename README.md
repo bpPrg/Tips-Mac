@@ -64,6 +64,7 @@ alias qlf='qlmanage -p "$1" > /dev/null 2>&1'
 ```
 
 ## Mac Malwares and Viruses
+These are the viruses in Mac, If you see them, uninstall them.
 1. Epolife
 2. Jimbre
 3. Friendlysocket
