@@ -97,7 +97,7 @@ osascript -e 'display notification "Notification text" with title "Title"'
 [dr-cleaner]: https://www.drcleaner.com/dr-cleaner/
 [dropbox]: https://www.dropbox.com/install
 [ds9]: http://ds9.si.edu/site/Download.html
-[fv-view]: https://heasarc.gsfc.nasa.gov/ftools/fv/
+[fv-viewer]: https://heasarc.gsfc.nasa.gov/ftools/fv/
 [google-drive]: https://www.google.com/drive/download/
 [hdf5-view]: https://www.hdfgroup.org/downloads/
 [latexit]: https://www.chachatelier.fr/latexit/latexit-downloads.php
