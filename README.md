@@ -14,7 +14,7 @@
 - NEVER download XQuartz (it harmed my dmstack), install xcode using atom, when installing atom, it installs xcode.
 - CopyClip, Alfred, aText
 - App Cleaner & Uninstaller
-- Slack, Zotero, DS9
+- Slack, Zotero, DS9, Latexit, [Time Out][time-out]
 - BitBar # Put timer, spotify items etc plugins in Mac menubar.
 - OneDrive, Google Drive, Dropbox
 -  _Careful:_ [pCloud][pcloud] # It did not work well in macpro, but is working in linux.
@@ -87,3 +87,4 @@ osascript -e 'display notification "Notification text" with title "Title"'
 ![Finder Customized Toolbar](images/Finder_toolbar.png)
 
 [pcloud]: https://www.pcloud.com/how-to-install-pcloud-drive-mac-os.html?download=mac
+[time-out]: http://www.dejal.com/download/?prod=timeout&vers=2.4&rel=gen&lang=en&op=show&ref=timeout
