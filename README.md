@@ -14,7 +14,7 @@
 - NEVER download XQuartz (it harmed my dmstack), install xcode using atom, when installing atom, it installs xcode.
 - [CopyClip][copyclip], [Alfred][alfred], [aText][atext]
 - [App Cleaner & Unistaller][app-cleaner-and-uninstaller]
-- [Slack][slack], [Zotero][zotero] [DS9][ds9], [Latexit][latexit], [Time Out][time-out]
+- [Slack][slack], [Zotero][zotero], [DS9][ds9], [Latexit][latexit], [Time Out][time-out]
 - [BitBar][bitbar] # Put timer, spotify items etc plugins in Mac menubar.
 - [OneDrive][onedrive], [Google Drive][google-drive], [Dropbox][dropbox]
 -  _Careful:_ [pCloud][pcloud] # It did not work well in macpro, but is working in linux.
