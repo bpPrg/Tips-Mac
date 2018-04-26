@@ -21,6 +21,8 @@
 - [Dr. Cleaner][dr-cleaner], [Battery Monitor][battery-monitor], [DjVu Reader][djvu-reader]
 - [Cheatsheet][cheatsheet] # Go to any app, press and hold to see keyboard shortcuts
 - _Careful:_ [hdf5-view][hdf5-view] and [fv-viewer][fv-viewer] (These gave problem with dmstack on pisces)
+- _Careful:_ [MacTex][mactex] For latex commnads in Mac, its very huge app (About 3GB)
+- _Note:_ Latexit install ps2pdf, pdflatex commands itself.
 
 ## QuickLook Plugins
 - Collections of useful quick look plugins are given [here](https://github.com/sindresorhus/quick-look-plugins).
@@ -101,6 +103,7 @@ osascript -e 'display notification "Notification text" with title "Title"'
 [google-drive]: https://www.google.com/drive/download/
 [hdf5-view]: https://www.hdfgroup.org/downloads/
 [latexit]: https://www.chachatelier.fr/latexit/latexit-downloads.php
+[mactex]: http://www.tug.org/mactex/downloading.html
 [onedrive]: https://onedrive.live.com/about/en-us/download/
 [pcloud]: https://www.pcloud.com/how-to-install-pcloud-drive-mac-os.html?download=mac
 [slack]: https://slack.com/downloads/osx
