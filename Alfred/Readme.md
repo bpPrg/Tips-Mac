@@ -15,8 +15,11 @@
   Powerpack is not that useful unless we use workflows extensively.
   In free version of Alfred we can use websearch and file search like as Spotlight.
 
+## Example of Alfred workflow
+![](custom-search-alfred-how-to.gif) 
 
-## Convert aText snippets to alfredsnippets
+
+# Convert aText snippets to alfredsnippets
 To convert a simple aText snippets in a csv format without special fields we can use the python script
 `convert-aText-to-Alfred.py`.
 
