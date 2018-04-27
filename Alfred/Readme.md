@@ -17,8 +17,8 @@
 
 ## Some workflows Installations
 1. [youtube-vlc-workflow](http://www.packal.org/workflow/alfred-youtube-vlc-workflow).
-Go to this [link](https://developers.google.com/youtube/v3/getting-started) and create a api key.
-2. Go to this [link](https://developers.google.com/youtube/v3/getting-started) and ENABLE the API.
+- Go to this [link](https://developers.google.com/youtube/v3/getting-started) and create a api key.
+- Go to this [link](https://developers.google.com/youtube/v3/getting-started) and ENABLE the API.
 
 
 ## Example of Alfred workflow
