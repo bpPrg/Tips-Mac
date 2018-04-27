@@ -19,6 +19,7 @@
 1. [youtube-vlc-workflow](http://www.packal.org/workflow/alfred-youtube-vlc-workflow).
 - Go to this [link](https://developers.google.com/youtube/v3/getting-started) and create a api key.
 - Go to this [link](https://developers.google.com/youtube/v3/getting-started) and ENABLE the API.
+- Type `yt video_name` in Alfred, then, enter will go there and `Cmd C` will copy the link of first option.
 
 
 ## Example of Alfred workflow
