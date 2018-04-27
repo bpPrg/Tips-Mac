@@ -15,6 +15,11 @@
   Powerpack is not that useful unless we use workflows extensively.
   In free version of Alfred we can use websearch and file search like as Spotlight.
 
+## Alfred Tips
+1. Search a file in Alfred (eg. png) and press Shift key to see the quicklook.
+2. Search png in alfred, go to a file press opt-uparrow, go to another png and opt-uparrow, then opt-rightarrow
+
+
 ## Some workflows Installations
 1. [youtube-vlc-workflow](http://www.packal.org/workflow/alfred-youtube-vlc-workflow).
 - Go to this [link](https://developers.google.com/youtube/v3/getting-started) and create a api key.
