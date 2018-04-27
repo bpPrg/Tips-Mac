@@ -15,6 +15,12 @@
   Powerpack is not that useful unless we use workflows extensively.
   In free version of Alfred we can use websearch and file search like as Spotlight.
 
+## Some workflows Installations
+1. [youtube-vlc][http://www.packal.org/workflow/alfred-youtube-vlc-workflow]
+Go to this [link][https://developers.google.com/youtube/v3/getting-started] and create a api key.
+2. Go to this [link][https://developers.google.com/youtube/v3/getting-started] and ENABLE the API.
+
+
 ## Example of Alfred workflow
 ![](custom-search-alfred-how-to.gif) 
 
