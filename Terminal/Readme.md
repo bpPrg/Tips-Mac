@@ -2,6 +2,8 @@
 Download the [solarized-theme](https://github.com/tomislav/osx-terminal.app-colors-solarized), right click to add the theme.
 Then go the terminal settings and set it as the default terminal.
 
+Download this [solarized terminal](https://github.com/tomislav/osx-terminal.app-colors-solarized/blob/master/Solarized%20Dark.terminal/raw=True).
+
 # Prompt Settings (PS1)
 
 ```bash
