@@ -30,3 +30,9 @@ PS1+="\[${white}\]\$ \[${reset}\]";
 export PS1;
 ```
 
+# Colors of files and directories
+```bash
+export CLICOLOR=1 # enable color
+export LSCOLORS=dxcxexdxcxegedabagacad
+# yellow dir, gray files
+```
