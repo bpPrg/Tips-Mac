@@ -20,6 +20,7 @@
 -  _Careful:_ [pCloud][pcloud] # It did not work well in macpro, but is working in linux.
 - [Dr. Cleaner][dr-cleaner], [Battery Monitor][battery-monitor], [DjVu Reader][djvu-reader]
 - [Cheatsheet][cheatsheet] # Go to any app, press and hold to see keyboard shortcuts
+- [BeardedSpice][bearded-spice] # To control youtube spotify iTunes etc.
 - _Careful:_ [hdf5-view][hdf5-view] and [fv-viewer][fv-viewer] (These gave problem with dmstack on pisces)
 - _Careful:_ [MacTex][mactex] For latex commnads in Mac, its very huge app (About 3GB)
 - _Note:_ Latexit install ps2pdf, pdflatex commands itself.
@@ -92,6 +93,7 @@ osascript -e 'display notification "Notification text" with title "Title"'
 [app-cleaner-and-uninstaller]: https://itunes.apple.com/us/app/app-cleaner-uninstaller/id1013897218?mt=12
 [atext]: http://www.trankynam.com/atext/
 [battery-monitor]: https://www.macupdate.com/app/mac/50775/battery-monitor
+[bearded-spice]:http://beardedspice.github.io/
 [bitbar]: https://github.com/matryer/bitbar
 [cheatsheet]: https://www.mediaatelier.com/CheatSheet/
 [copyclip]: https://itunes.apple.com/us/app/copyclip-clipboard-history-manager/id595191960?mt=12
